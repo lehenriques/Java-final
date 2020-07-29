@@ -1,8 +1,5 @@
 package com.desafio.model;
 
-
-import org.springframework.data.annotation.Id;
-
 import javax.persistence.*;
 
 

@@ -58,6 +58,7 @@ public class AccountController {
         return ResponseEntity.ok().build();
     }
 
+    @PutMapping("/conta/{id}/credito")
     public Account depositAccount(@PathVariable(value = "id") Long accountId,
                                 @RequestBody Account accountDetails) {
 
@@ -71,6 +72,7 @@ public class AccountController {
 
     }
 
+    @PutMapping("/conta/{id}/debito")
     public Account withdrawAccount(@PathVariable(value = "id") Long accountId,
                                   @RequestBody Account accountDetails) {
 
